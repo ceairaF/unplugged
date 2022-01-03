@@ -100,19 +100,15 @@ footer {
 
 /***** Header styles *****/
 
-header {
-
-}
 
 header .content-wrapper {
   display:flex;
+  justify-content: center;
+  align-items: center;
   flex-flow:row wrap;
 
 }
 
-header .divider{
-
-}
 
 header nav {
   display:flex;
@@ -123,8 +119,7 @@ header nav {
 
 header nav ul{
   display:flex;
-  justify-content: center;
-  align-items:center;
+  justify-content: space-around;
 }
 
 /****** Footer styles *******/
@@ -144,73 +139,50 @@ footer .social {
 
 /******************* Mobile Styles- Homepage ******************/
 
+/*** Hero Area ***/
+
 .hero-area {
   display:flex;
-  justify-content: flex-start;
-  align-items:flex-start;
+  justify-content: center;
+  flex-flow:row wrap;
 }
 
-main .content-wrapper {
-
-}
+/*** Aside ***/
 
 aside {
   display:flex;
-  justify-content:flex-start;
-  align-items:flex-start;
+  justify-content:center;
+  align-items:center;
   flex-flow:row wrap;
 }
+
+/*** Features ***/
 
 .features {
   display:flex;
   justify-content:center;
-  align-items:center;
+  flex-flow: row wrap;
 }
 
-.features .content-wrapper {
-
-}
-
-.features-items {
+.features .features-items {
   display:flex;
   justify-content: center;
   align-items:center;
   flex-flow: row wrap;
 }
 
+/*** Reviews ***/
+
 .reviews {
   display:flex;
   justify-content: center;
-  align-items:center;
   flex-flow:row wrap;
 }
 
-.reviews .content-wrapper {
-
-}
-
-/*****footer****/
-
-footer {
-
-}
-
-footer .content-wrapper {
-
-}
-
-.social {
-
-}
-
-.copyright {
-
-}
 
 /**************** Mobile styles- About ********************/
 
 
-/*** main ***/
 .mission {
   display:flex;
   justify-content: center;
@@ -218,12 +190,6 @@ footer .content-wrapper {
   flex-flow:row wrap;
 }
 
-.mission .content-wrapper {
-
-}
-.mission .content {
-
-}
 
 /*** contact ***/
 
@@ -232,14 +198,6 @@ footer .content-wrapper {
   justify-content: center;
   align-items:center;
   flex-flow:row wrap;
-}
-
-.content-wrapper {
-  
-}
-
-.contact-content {
-  
 }
 
 
@@ -258,14 +216,6 @@ footer .content-wrapper {
   align-items:center;
   flex-flow:row wrap;
 }
-
-.faq .content {
-
-}
-
-
-
-
 
 
 
