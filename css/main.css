@@ -249,6 +249,11 @@ footer .copyright {
   display:flex;
   justify-content: center;
   flex-flow:row wrap;
+  background: url('img/hero.jpg') #333;
+  background-image: url('img/hero.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 
 .hero-area h1{
@@ -533,12 +538,21 @@ header nav ul {
 
 /* Hero Area */
 
+.hero-area .content-wrapper {
+  background: url('img/hero.jpg');
+  background-image: url('img/hero.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
 
 .hero-area h1 {
   font-size: 3em;
   line-height: 1;
   margin: 0;
 }
+
+
 
 /* Aside */
 aside .content-wrapper {
