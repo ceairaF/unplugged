@@ -112,6 +112,8 @@ body {
 ul, 
 ol {
   list-style-type:none;
+  margin:0;
+  padding:0;
 }
  
 a {
@@ -123,6 +125,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size:1.875em;
     font-weight:500;
+    margin:0;
 }
  
 h3,
@@ -206,7 +209,6 @@ header nav ul{
   display:flex;
   justify-content: space-around;
   width: 100%;
-
 }
 
 header nav ul li {
@@ -218,13 +220,6 @@ header nav ul li {
 footer {
   flex-direction: column;
   text-align:center;
-}
-
-.footer .footer-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 footer p{
@@ -390,25 +385,6 @@ input[type=button] {
   background-color: #527158;
 }
 
-
-.contact-section {
-  background-color: #2a423a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-.contact-content{
-  display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row wrap;
-}
-
-.contact-content p {
-  margin:0;
-}
-
 .map {
   position: relative;
   padding-bottom:125%;
@@ -425,8 +401,17 @@ input[type=button] {
   height:100%;
   }
 
-  
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
+.contact-content p {
+  margin:0;
+}
 
 /*************** Mobile styles- FAQ *****************/
 
@@ -451,9 +436,6 @@ input[type=button] {
   line-height:1;
 }
 
-.faq-content {
-  margin-bottom:50px;
-}
 .faq-content h4 {
   line-height:1.333;
 }
@@ -549,7 +531,7 @@ input[type=button] {
 
 @media only screen and (min-width:768px) {
   /*Tablet style here*/
-}
+
    /* General styles */
    .content-wrapper {
     max-width: 640px;
@@ -586,8 +568,7 @@ header nav {
 }
 
 header nav ul {
-    justify-content:space-between;
-    
+  justify-content: space-between;
 }
 
 .header-divider {
@@ -639,6 +620,17 @@ aside .content-wrapper .form {
     width: 62%;
 }
 
+.feat i {
+  margin-bottom: 30px;
+}
+
+.features .features-items {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow: row wrap;
+}
+
 /* Reviews */
 .reviews article {
     display:flex;
@@ -649,6 +641,7 @@ aside .content-wrapper .form {
   width:85%;
 }
 
+.reviews article figure,
 .reviews article div {
     width: 49%;        
 }
@@ -656,6 +649,7 @@ aside .content-wrapper .form {
 .reviews h3 {
   width:75%;
   margin:0;
+  padding:0;
 }
 
 /* Footer */
@@ -666,7 +660,7 @@ footer .content-wrapper {
 
 footer .footer-content {
   display:flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
@@ -684,6 +678,10 @@ footer p {
   line-height: 1.285;
 }
 
+footer .social-icons {
+  width:11em;
+  justify-content: space-between;
+}
 footer .copyright {
     width: 100%;
 }
@@ -720,6 +718,7 @@ footer .copyright {
   padding-bottom:45.5%;
 }
 
+
 /********* FAQ page- Tablet *******/
 
 .faq .content-wrapper {
@@ -732,7 +731,6 @@ footer .copyright {
 
 .faq h2 {
   width:100%;
-  font-size:2em;
 }
 
 .faq h4,
@@ -740,13 +738,14 @@ footer .copyright {
     font-size: .875em;
     line-height: 1.125;
 }
+}
 
   @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
+
+header {
+  padding:15px 0;
 }
-  header {
-    padding:15px 0;
-  }
 
 .content-wrapper {
   max-width: 960px;
@@ -769,7 +768,7 @@ p {
 /* Hero */
 .hero-area h1 {
  font-size:3.75em;
- width: 60%;
+ width: 80%;
 }
 
 /* Aside */
@@ -792,11 +791,15 @@ aside .content-wrapper .form {
  width: 90%;
 }
 
-.features .features-items {
-  flex-flow: row wrap;
-}
 .features article {
  flex-basis: 33%;
+}
+
+.features .features-items {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow: row wrap;
 }
 
 /* Reviews */ 
@@ -811,6 +814,7 @@ aside .content-wrapper .form {
 footer h4 {
   font-size:1.875em;
 }
+
 
 /********* About page- Desktop *******/
 
@@ -840,7 +844,7 @@ footer h4 {
   font-size: 1.125em;
   line-height: 1;
 }
-
+  }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
